@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hide function in jquery</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<p id="p1">click hide button</p>
+	<button id="hide" >hide</button>
+	<button id="show">Show</button>
+    <p id="p2">double click</p>
+    <h1 id="h1">Mouse enter</h1>
+    <h1 id="h2">Leave the mouse</h1>
+    <p id="p3">mouse down</p>
+    <p id="p4">mouseup</p>
+    Name: <input type="text" name="fullname"><br>
+    Email: <input type="text" name="email">
+   <script type="text/javascript">
+  $(document).ready(function()
+  {
+ $("#hide").click(function(){
+    $("#p1").hide();
+  });
+$("#show").click(function(){
+    $("#p1").show();
+  });//click event
+  $("#p2").dblclick(function(){
+  	$("#p2").hide();//double click function
+  });
+  $("#h1").mouseenter(function(){
+    $("#h1").hide()
+  });//mouseenter function
+  $("#h2").mouseleave(function(){
+  $("#h2").hide()
+  });//mouseleave function
+  $("#p3").mousedown(function(){
+  $("#p3").hide();
+  });//mousedown function
+  $("#p4").mouseup(function(){
+  $("#p4").hide();
+  });//moudeup
+  $("#p5").hover(function(){
+  $("#p5").hide();
+  });//hover
+  $(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+});
+
+});
+
+
+   </script>
+</body>
+</html>

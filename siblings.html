@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>siblings</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script>
+
+   //$(document).ready(function(){
+ // $("li.start").siblings().css
+ // ({
+ // 	"color": "red", "border": "2px solid red"
+ // });
+//});//siblings
+
+// $(document).ready(function(){
+//   $("li.start").next().css({"color": "red", "border": "2px solid red"});
+// });//next
+ 
+
+ // $(document).ready(function(){
+ // 	$("li").nextAll().css
+ // 	({
+ // 		"color": "black", "border": "2px solid black"
+ //   });
+ // })//nextall
+
+ // $(document).ready(function(){
+ //  $("li.start").nextUntil("li.stop1").css({"color": "red", "border": "2px solid red"});
+ // });//nextUntil
+
+//  $(document).ready(function(){
+//   $("li.start").prev().css({"color": "red", "border": "2px solid red"});
+// });//previous
+
+// $(document).ready(function(){
+//   $("li.start").prevAll().css({"color": "green", "border": "2px solid green"});
+// });//previous
+
+$(document).ready(function(){
+  $("li.start").prevUntil("li.stop").css({"color": "red", "border": "2px solid red"});
+});//previousuntil
+
+
+</script>
+</head>
+<body>
+     <div style="width:500px;" class="siblings">
+  <ul>ul (parent)  
+    <li class="stop">li (the previous sibling of "start")</li>
+    <li>li (the previous sibling of "start")</li>
+    <li>li (the previous sibling of "start")</li>
+    <li class="start">li (sibling)</li>
+    <li>li (the next sibling of "start")</li>
+    <li class="stop1">li (the next sibling of "start")</li>
+  </ul>   
+</div>
+</body>
+</html>

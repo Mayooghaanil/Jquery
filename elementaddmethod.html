@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements add methods</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+   <script type="text/javascript">
+
+//      $(document).ready(function(){
+//   $("#btn1").click(function(){
+//     $("p").append("<i>Appended text</i>"
+//     	);
+//   });
+// });//appending
+
+ $(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").prepend("<b>prepend text</b>"
+    	);
+  });
+});//prepending
+
+// $(document).ready(function(){
+//   $("#btn1").click(function(){
+//     $("img").before("<h2>Before</h2>");
+//   });//before
+
+//   $("#btn2").click(function(){
+//     $("img").after("<h2>After</h2>");
+//   });
+// });//after
+   </script>
+
+   <p> This is a first paragraph. </p>
+   <p> This is second paragraph. </p>
+   <button id="btn1">click</button>
+
+   <!-- <img src="th (2).jfif"width="200" height="150"><br><br> -->
+
+<button id="btn1">before</button>
+<button id="btn2">after</button>
+   </body>
+</html>

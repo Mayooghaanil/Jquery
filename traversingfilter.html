@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>traversing filter</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script>
+
+
+		//$(document).ready(function(){
+ // $("div").first().css("background-color", "yellow");
+//});//firat
+
+// $(document).ready(function(){
+//   $("div").last().css("background-color", "red");
+// });//last
+
+// $(document).ready(function(){
+//   $("p").eq(2).css("background-color", "green");
+// });//equal
+
+$(document).ready(function(){
+  $("p").not(".intro").css("background-color", "red");
+});
+
+   </script>
+</head>
+<body>
+     <!-- <div style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div> --><!-- first last html page  -->
+
+
+<p>My name is Donald (index 0).</p>
+<p>Donald Duck (index 1).</p>
+<p>I live in Duckburg (index 2).</p>
+<p class="intro">My best friend is Mickey (index 3).</p><!-- equal html page -->
+
+</body>
+</html>

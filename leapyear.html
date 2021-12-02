@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>leap year</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+   <script type="text/javascript">
+   	function checkLeapYear(year) {
+
+    //three conditions to find out the leap year
+    if(year==0)
+    {
+    	document.write("Enter valid input");
+    }
+    else if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+        document.write(year + ' is a leap year');
+    } 
+    
+
+    else {
+        document.write(year + ' is not a leap year');
+    }
+}
+
+// take input
+const year = prompt('Enter a year:');
+
+checkLeapYear(year);
+   </script>
+</body>
+</html>

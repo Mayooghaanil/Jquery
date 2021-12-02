@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text html val attribut</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<script>
+// $(document).ready(function(){
+//   $("#btn1").click(function(){
+//     $("p").text("..Welcome..");
+//   });
+// });//text
+
+// $(document).ready(function(){
+//   $("#btn1").click(function(){
+//     $("p").html("Hello <h1>world..</h1>");
+//   });
+// });//html
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+       alert($("a").attr("href"));
+		});
+	});//attr
+
+// $(document).ready(function(){
+//   $("#btn2").click(function(){
+//     $("input:text").val("Enter your full name");
+//   });
+// });//value
+
+</script>
+<button id="btn1">click here</button>
+<p>This is a first paragraph.</p>
+<p>This is second paragraph.</p>
+<p><a href="www.google.com"></a></p>
+
+<!-- <p>Name: <input type="text"></p>
+<button id="btn2">button</button> -->
+
+
+</body>
+
+
+
+</html>

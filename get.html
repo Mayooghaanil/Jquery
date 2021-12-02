@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>addclass,removeclass,toggleclass,cssclass</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<script type="text/javascript">
+// $(document).ready(function(){
+//   $("#btn1").click(function(){
+//     $("h1,p").addClass("green");
+//   });
+// });//add class
+
+// $(document).ready(function(){
+//   $("#btn2").click(function(){
+//     $("h1,p").removeClass("green");
+//   });
+// });//remove class
+
+ $(document).ready(function(){
+  $("#btn3").click(function(){
+    $("h1,p").toggleClass("green");
+  });
+});//toggle
+
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("h1").css({
+"color":"red",
+"font-size":"20px"
+    }
+    	)
+    });
+  });//css class
+</script>
+<style>
+.green {
+ 
+  color: green;
+
+}
+</style>
+<h1>Hello</h1>
+<h1>Welcome</h1>
+<p>Hello world</p>
+<p>hii....!</p>
+<button id="btn1">Add style</button>
+<button id="btn2">remove style</button>
+<button id="btn3">toggle</button>
+<button id="btn4">css</button>
+</body>
+</html>

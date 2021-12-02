@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add remove input</title>
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="form.js"></script>
+</head>
+<body>
+	<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<center>
+<h1>Name of customers</h1>
+   <form id="frm">
+   	<label>Name</label>
+   	<input id="name1" type="text" name="name">
+   	<button id="add" type="button">Add Customer Details</button><br><br>
+   	
+   
+   <table border="5">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Name</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <td>Esther Saradha</td>
+               </tr>
+        </tbody>
+    </table><br>
+   <button id="delet" type="button">Delete Customer Details</button>
+</center>
+
+</form>
+</body>
+</html>
